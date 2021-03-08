@@ -15,7 +15,7 @@ app_name = 'polls'
 urlpatterns = [
     path('', views.index, name='index'),
     # angle brackets, because we are passing in the parameter, polls/id
-    # question id will be abstracted form here, lets say
+    # question id will be abstracted from here, lets say
 
     # views.result vanako function ho
     path('<int:question_id>/', views.detail, name='detail'),
@@ -24,3 +24,12 @@ urlpatterns = [
 ]
 # path('result') vako vayee it would have been polls/result
 # want to be /polls , connect to views.index and give the name index
+
+
+
+
+
+path(link, view, name)
+
+
+path('')

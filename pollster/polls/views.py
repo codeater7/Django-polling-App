@@ -22,7 +22,7 @@ def index(request):
   latest_question_list = Question.objects.order_by('-pub_date')[:5]
 
   #  inorder to pass into the template, we pass it as an object common convention is to write context
-    context = {'latest_question_list': latest_question_list}
+  context = {'latest_question_list': latest_question_list}
 
     # last ko ma context falako ho
     return render(request, 'polls/index.html', context)

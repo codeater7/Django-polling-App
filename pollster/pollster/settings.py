@@ -60,11 +60,15 @@ ROOT_URLCONF = 'pollster.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+
         # Hami lee template bahira ko folder ma banako thio so, django lee tso sochdaina
         # yeslee harek room ma nai template folder 6 hai vanni sochdaxa,
-        # Baba tsto hoina, vanna hami  leee yeha define garna parxa, solti template default ma 6aina, aarko ma 6 vanna parxa
+        # Baba tsto hoina, vanna hami  leee yeha define garna parxa, solti template default ma 6aina, aarko ma 6 vanna parxa   
         # when we to use the template then, we have to define here the directory
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
+
+        #
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,3 +132,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
