@@ -30,7 +30,8 @@ class Employee:
 
 emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'Employee', 60000)
+print(emp_1 + emp_2)   # __add__ methods prints the number
+print(emp_1.fullname())
 
-# print(emp_1 + emp_2)
 
-print(len(emp_1))
+print(len(emp_1))    #special_methods

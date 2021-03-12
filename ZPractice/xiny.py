@@ -259,12 +259,12 @@ tup[0] = 3                                   # Raises a TypeError
 # Note that a tuple of length one has to have a comma after the last element but
 # tuples of other lengths, even zero, do not.
 type((1))   # => <class 'int'>
-type((1,))  # => <class 'tuple'>               // Very important  ( tuple of)
+type((1,))  # => <class 'tuple'>                 // Very important  ( tuple of)
 type(())    # => <class 'tuple'>
 
 # You can do most of the list operations on tuples too
 len(tup)         # => 3
-tup + (4, 5, 6)  # => (1, 2, 3, 4, 5, 6)                 // +
+tup + (4, 5, 6)  # => (1, 2, 3, 4, 5, 6)                 // + we can add with plus
 tup[:2]          # => (1, 2)
 2 in tup         # => True
 
@@ -324,6 +324,7 @@ filled_dict["four"]  # KeyError
 # Use "get()" method to avoid the KeyError                           # get("keyname")
 filled_dict.get("one")      # => 1
 filled_dict.get("four")     # => None
+
 # The get method supports a default argument when the value is missing
 filled_dict.get("one", 4)   # => 1
 filled_dict.get("four", 4)  # => 4

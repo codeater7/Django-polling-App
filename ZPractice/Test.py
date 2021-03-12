@@ -236,3 +236,6 @@ if __name__ == '__main__':
     
 
     print(sujan.posts)
+
+
+#trim() in js === strip(), lstrip, Rstrip()
